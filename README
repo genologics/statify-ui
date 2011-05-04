@@ -1,0 +1,14 @@
+Getting Started
+===============
+
+1. brew install mysql
+$ mysqladmin create statifyDB
+$ mysql -uroot -p statifyDB
+mysql> grant all on statifyDB.* to statify@localhost identified by '<some password>'
+
+2. mkvirtualenv genologics
+3. pip install mysql-python
+4. pip install django
+5. python manage.py syncdb
+
+A default fixture exists that will add a default 'admin'/'pass' user.  
