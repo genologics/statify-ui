@@ -6,6 +6,8 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
+   url(r'^api/', include('api.urls')),
+
     # Examples:
     # url(r'^$', 'statify.views.home', name='home'),
     # url(r'^statify/', include('statify.foo.urls')),
