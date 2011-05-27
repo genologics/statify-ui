@@ -13,5 +13,5 @@ log_handler = CsrfExemptResource(LogHandler)
 
 urlpatterns = patterns('',
                        url(r'^register', registration_handler, {'emitter_format': 'text'}),
-                       url(r'^log', log_handler, {'emitter_format': 'text'})
+                       url(r'^logmodel', log_handler, {'emitter_format': 'text'})
 )

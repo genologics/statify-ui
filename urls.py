@@ -7,7 +7,8 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
    url(r'^api/', include('api.urls')),
-
+   url(r'^$', include('reporting.urls')),
+   
     # Examples:
     # url(r'^$', 'statify.views.home', name='home'),
     # url(r'^statify/', include('statify.foo.urls')),

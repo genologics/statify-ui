@@ -1,7 +1,7 @@
 import uuid
 from piston.handler import BaseHandler
 from piston.utils import rc
-from log.models import Entry
+from logmodel.models import Entry
 
 class RegistrationHandler(BaseHandler):
     allowed_methods = ('GET',)
